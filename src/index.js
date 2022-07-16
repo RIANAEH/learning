@@ -8,7 +8,7 @@ const rootElement = document.getElementById("root");
 
 render(
   <BrowserRouter>
-    <Routes>
+    <Routes basename={process.env.PUBLIC_URL}>
       <Route path="/" element={<App />} />
       <Route path="pair-timer" element={<PairTimer />} />
       <Route path="morak-role-selector" element={<MorakRoleSelector />} />
