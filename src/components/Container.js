@@ -3,7 +3,8 @@ import React from "react";
 const Container = (props) => {
 
     const constainerStyle = {
-        margin: props.m
+        margin: props.m,
+        fontSize: props.f
     }
 
     return (
