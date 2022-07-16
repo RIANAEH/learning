@@ -18,7 +18,10 @@ const MorakRoleSelector = () => {
     return (
         <div>
             <Title>👑 모락 역할 정하기 👑</Title>
-            <Container m='40px 0'>
+            <Container m='10px 0' f='15px'>
+                오늘 하루도 우하하~~☀️
+            </Container>
+            <Container m='10px 0'>
                 {roles.map((role, index) => {
                     return <div>{role}: {sequences[index]}</div>;
                 })}
