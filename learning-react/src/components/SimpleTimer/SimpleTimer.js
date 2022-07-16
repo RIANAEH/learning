@@ -8,6 +8,10 @@ const SimpleTimer = (props) => {
     
     const [minutes, setMinutes] = useState(targetMinutes);
     const [seconds, setSeconds] = useState(targetSeconds);
+
+    const stopTimer = () => {
+        props.stop();
+      };
     
     useEffect(() => {
         const countdown = setInterval(() => {
@@ -28,7 +32,10 @@ const SimpleTimer = (props) => {
 
     return (
         <div>
-            {minutes}:{seconds < 10 ? `0${seconds}` : seconds}
+            <div>
+                {minutes}:{seconds < 10 ? `0${seconds}` : seconds}
+            </div>
+            <div onClick={stopTimer}>stop 🖐</div>
         </div>
     )
 }
