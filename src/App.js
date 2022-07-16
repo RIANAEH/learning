@@ -17,12 +17,16 @@ export default function App() {
           paddingBottom: "1rem"
         }}
       >
-        <button style={buttonStyle}>
-          <Link to="/pair-timer">⏰ 페어 타이머</Link>
-        </button>
-        <button style={buttonStyle}>
-          <Link to="/morak-role-selector">👑 모락 역할 정하기</Link>
-        </button>
+        <Link to="/pair-timer">
+          <button style={buttonStyle}>
+            ⏰ 페어 타이머
+          </button>
+        </Link>
+        <Link to="/morak-role-selector">
+          <button style={buttonStyle}>
+            👑 모락 역할 정하기
+          </button>
+        </Link>
       </nav>
     </div>
   );
