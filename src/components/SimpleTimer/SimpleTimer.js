@@ -34,6 +34,9 @@ const SimpleTimer = (props) => {
 
     return (
         <div>
+            <Container m='10px 0' f='15px'>
+                종료되면 효과음이 울려요🎶
+            </Container>
             <Container m='10px 0'>
                 {minutes}:{seconds < 10 ? `0${seconds}` : seconds}
             </Container>
