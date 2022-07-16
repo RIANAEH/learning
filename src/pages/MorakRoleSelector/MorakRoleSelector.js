@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import Title from "../../components/Title/Title";
 
 const MorakRoleSelector = () => {
@@ -16,11 +17,12 @@ const MorakRoleSelector = () => {
     return (
         <div>
             <Title>👑 모락 역할 정하기 👑</Title>
-            <div>
+            <div style={{margin: '40px 0'}}>
                 {roles.map((role, index) => {
                     return <div>{role}: {sequences[index]}</div>;
                 })}
             </div>
+            <Link style={{margin: '40px 0'}} to="/">🏡 홈으로</Link>
         </div>
     )
 };
