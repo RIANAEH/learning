@@ -7,7 +7,7 @@ import PairTimer from "./pages/PairTimer/PairTimer";
 const rootElement = document.getElementById("root");
 
 render(
-  <BrowserRouter>
+  <BrowserRouter basename={process.env.PUBLIC_URL}>
     <Routes basename={process.env.PUBLIC_URL}>
       <Route path="/" element={<App />} />
       <Route path="pair-timer" element={<PairTimer />} />
