@@ -20,8 +20,8 @@ export default function App() {
         <button style={buttonStyle}>
           <Link to="/pair-timer">⏰ 페어 타이머</Link>
         </button>
-        <button>
-          <Link to="/pair-timer">Expenses</Link>
+        <button style={buttonStyle}>
+          <Link to="/morak-role-selector">👑 모락 역할 정하기</Link>
         </button>
       </nav>
     </div>

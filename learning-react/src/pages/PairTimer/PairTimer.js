@@ -7,7 +7,7 @@ import Countdown from "../../components/Countdown"
 const PairTimer =  () => {
 
   return (
-    <div className="App">
+    <div>
       <Title>⏰ 페어 타이머 ⏰</Title>
       <div>
         <Countdown/>
