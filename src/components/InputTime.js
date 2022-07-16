@@ -26,7 +26,7 @@ const InputTime = props => {
                 value={seconds}
                 onChange={e => setSeconds(e.target.value)}
             />
-            <div onClick={startTimer}>🏃🏻‍♂️</div>
+            <button style={{margin: '10px 0'}} onClick={startTimer}>🎬 시작</button>
         </div>
     )
 }

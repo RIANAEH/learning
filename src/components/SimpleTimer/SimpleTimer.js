@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import ReactHowler from 'react-howler'
+import Container from "../Container";
 import './SimpleTimer.css';
 
 const SimpleTimer = (props) => {
@@ -32,10 +34,16 @@ const SimpleTimer = (props) => {
 
     return (
         <div>
-            <div>
+            <Container m='10px 0'>
                 {minutes}:{seconds < 10 ? `0${seconds}` : seconds}
-            </div>
-            <div onClick={stopTimer}>stop 🖐</div>
+            </Container>
+            <Container m='10px 0'>
+                <button onClick={stopTimer}>🛑 종료</button>
+            </Container>
+            <ReactHowler
+                src='http://goldfirestudios.com/proj/howlerjs/sound.ogg'
+                playing={minutes === 0 && seconds === 0}
+            ></ReactHowler>
         </div>
     )
 }
