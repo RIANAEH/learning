@@ -32,6 +32,11 @@ export default function App() {
             👑 모락 역할 정하기
           </button>
         </Link>
+        <Link to="/morak-random-picker">
+          <button style={buttonStyle}>
+            🎱 모락 랜덤 뽑기
+          </button>
+        </Link>
       </nav>
     </div>
   );
