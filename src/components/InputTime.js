@@ -3,15 +3,14 @@ import Container from "./Container";
 
 const InputTime = props => {
 
-    const [minutes, setMinutes] = useState(5);
-    const [seconds, setSeconds] = useState(0);
+    const [minutes, setMinutes] = useState(props.timer.minutes? props.timer.minutes : 5);
+    const [seconds, setSeconds] = useState(props.timer.seconds? props.timer.seconds : 0);
 
     const startTimer = () => {
         props.startCountdown({
             minutes, 
             seconds
         })
-        console.log('start!');
     }
 
     const inputStyle = {

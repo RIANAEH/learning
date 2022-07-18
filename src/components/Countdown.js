@@ -9,11 +9,6 @@ const Countdown = () => {
     const [now, setNow] = useState(true);
 
     const [isRunning, setRunning] = useState(false);
-
-    const timerValue = {
-        minutes: 0,
-        seconds: 0
-    }
     
     const startCountdown = ( timerData ) => {
         setTimer(timerData);
@@ -21,13 +16,12 @@ const Countdown = () => {
     }
 
     const stop = () => {
-        setTimer(timerValue);
         setRunning(!isRunning);
 
         setNow(!now);
     }
     
-    const [ timer , setTimer ] = useState(timerValue);
+    const [ timer , setTimer ] = useState({minutes: 0, seconds: 0});
     
     return (
         <div>
@@ -41,7 +35,7 @@ const Countdown = () => {
                     stop={stop}
                 />
             ) : (
-                <InputTime startCountdown={startCountdown}/>
+                <InputTime timer={timer} startCountdown={startCountdown}/>
             )
             }
         </div>
