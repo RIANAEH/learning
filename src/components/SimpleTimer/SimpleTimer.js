@@ -25,8 +25,8 @@ const SimpleTimer = (props) => {
             clearInterval(countdown);
             return () => clearInterval(countdown);
             }
-            setMinutes(parseInt(minutes) - 1);
             setSeconds(59);
+            setMinutes(parseInt(minutes) - 1);
         }
         }, 1000);
         return () => clearInterval(countdown);
