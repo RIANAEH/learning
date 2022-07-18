@@ -1,17 +1,22 @@
 import { Link } from "react-router-dom";
 import Title from "./components/Title/Title";
 import "./App.css";
+import Container from "./components/Container";
 
 export default function App() {
 
   const buttonStyle = {
     margin: "5px", 
-    padding: "3px 6px"
+    padding: "3px 6px",
+    fontSize: '15px'
   }
 
   return (
     <div>
       <Title>안녕하세요👋, 엘리에요.</Title>
+      <Container m='10px' f='15px'>
+        아래 기능들을 이용해보세요.
+      </Container>
       <nav
         style={{
           paddingBottom: "1rem"

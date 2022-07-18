@@ -6,7 +6,7 @@ import Title from "../../components/Title/Title";
 const MorakRoleSelector = () => {
 
     const members = ['차리', '배카라', '엘리', '위니', '앨버', '에덴'];
-    const roles = ['반장👑', '서기✍️', '타임키퍼⏳', '공석🐥', '이슈관리✅', '공석🍼'];
+    const roles = ['반장👑', '서기✍️', '타임키퍼⏳', '카메라맨📸', '이슈관리✅', '공석🍼'];
     const [sequences, setSequences] = useState([]);
 
     useEffect(() => {
