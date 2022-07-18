@@ -19,7 +19,7 @@ const MorakRoleSelector = () => {
         <div>
             <Title>👑 모락 역할 정하기 👑</Title>
             <Container m='10px 0' f='15px'>
-                오늘 하루도 우하하~~☀️
+                오늘 하루도 우하하~~😄
             </Container>
             <Container m='10px 0'>
                 {roles.map((role, index) => {
