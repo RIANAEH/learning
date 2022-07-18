@@ -1,4 +1,5 @@
 import React, { useState, useContext } from "react";
+import Button from "./Button";
 import Container from "./Container";
 
 const InputTime = props => {
@@ -38,7 +39,7 @@ const InputTime = props => {
                 onChange={e => setSeconds(e.target.value)}
             />
             <Container m='10px 0'>
-                <button onClick={startTimer}>🎬 시작</button>
+                <Button onClick={startTimer}>🎬 시작</Button>
             </Container>
         </div>
     )

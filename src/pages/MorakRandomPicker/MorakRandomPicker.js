@@ -1,15 +1,10 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import Button from "../../components/Button";
 import Container from "../../components/Container";
 import Title from "../../components/Title/Title";
 
 const MorakRandomPicker = () => {
-
-    const buttonStyle = {
-        margin: "5px", 
-        padding: "3px 6px",
-        fontSize: '15px'
-      }
 
     const members = ['차리', '배카라', '엘리', '위니', '앨버', '에덴'];
     
@@ -55,7 +50,7 @@ const MorakRandomPicker = () => {
                     value={number}
                     onChange={e => setNumber(e.target.value)}
                 />
-                <button style={buttonStyle} onClick={pick}>🧨 뽑기</button>
+                <Button onClick={pick}>🧨 뽑기</Button>
             </Container>
             <Container m='10px 0'>
                 {pickedMembers.length != 0? pickedMembers.join(', ') : ''}
