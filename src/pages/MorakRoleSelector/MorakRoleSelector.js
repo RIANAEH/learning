@@ -11,8 +11,8 @@ const MorakRoleSelector = () => {
 
     useEffect(() => {
         const date = new Date().getDate();
-        const chaleeSequence = date % 6 - 1;
-        setSequences(members.slice(6 - chaleeSequence).concat(members.slice(0, 6 - chaleeSequence)));
+        const chaleeSequence = date % members.length;
+        setSequences(members.slice(-chaleeSequence).concat(members.slice(0, -chaleeSequence)));
     }, []);
 
     return (
